@@ -2,10 +2,10 @@
 title: The Incredible Adventure of Jojo (and his annoying little sister Avila)
 
 description: Desc
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/microsite" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  jtinianow
 
 # Build settings
 markdown: kramdown
