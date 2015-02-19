@@ -217,6 +217,11 @@ body {
   color: #333;
   background: #fefefe;
 }
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
 a,
 button,
 input {
@@ -284,6 +289,7 @@ h6 {
 }
 @media (min-width: 768px) {
   .content {
+    max-width: 65em;
     margin: 0 auto;
   }
 }
