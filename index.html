@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Jojo-microsite : Microsite for the Incredible Adventure of Jojo">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Jojo-microsite</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" contet="width=device-width, initial-scale=1"/>
+    <title>The Incredible Adventure of Jojo (and his annoying little sister Avila)</title>
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans:400italic,600,400,300" rel="stylesheet" type="text/css"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Coming+Soon" rel="stylesheet" type="text/css"/>
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jtinianow/jojo-microsite">View on GitHub</a>
-
-          <h1 id="project_title">Jojo-microsite</h1>
-          <h2 id="project_tagline">Microsite for the Incredible Adventure of Jojo</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/jtinianow/jojo-microsite/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/jtinianow/jojo-microsite/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <div class="header-primary__wrapper">
+      <header class="header-primary">
+        <div class="nav-primary__wrapper">
+          <nav class="nav-primary"><a href="#trailer" class="nav-primary__link">Trailer</a><a href="#about" class="nav-primary__link">About</a><a href="#screenings" class="nav-primary__link">Screenings</a></nav>
+        </div>
+      </header>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a id="jojo-microsite" class="anchor" href="#jojo-microsite" aria-hidden="true"><span class="octicon octicon-link"></span></a>jojo-microsite</h1>
+    <section class="content">
+      <section class="hero-img__wrapper">
+        <div class="hero-img"><img src="img/header-img-1.png"/></div>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Jojo-microsite maintained by <a href="https://github.com/jtinianow">jtinianow</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+      <section id="trailer" class="trailer__wrapper">
+        <h1 class="trailer__header">Watch the Trailer</h1>
+        <div class="video-container">
+          <iframe src="http://player.vimeo.com/video/89990378?title=0&byline=0&portrait=0" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
+        </div>
+      </section>
+      <section id="about" class="about__wrapper">
+        <h1 class="about__header">About the Film:</h1>
+        <p class="about__description">A mother takes her two children, Jojo and Avila, to visit Grandma in the woods. When their mother gets into a car accident on the way home, six year old Jojo is forced to take care of his baby sister Avila. The two of them battle against the odds as they try to escape an angry hobo, a ravenous pack of wolves, and the violent fury of Mother Nature. Can Jojo overcome his differences with Avila and make it home to Grandma?</p><a href="http://www.incrediblejojo.com/" target="_blank" class="about__link">More Info</a>
+      </section>
+      <section id="screenings" class="screenings__wrapper">
+        <div class="screenings__next">
+          <h1 class="screenings__header--next">Next Screening:</h1><span class="date">Sunday, Mar 8, 12:30PM</span><span class="festival">Boulder International Film Festival</span><span class="venue-name">Boulder Public Library</span><span class="venue-address-1">1001 Arapahoe Ave</span><span class="venue-address-2">Boulder, CO 80302</span><a href="http://biff1.com/biff2015_program_viewer.html#20" target="_blank" class="screening-info__link">More Info</a>
+        </div>
+        <div class="screenings__future">
+          <h2 class="screenings__header--future">Future Screenings:</h2><span class="date">(Day), (Date), (Time)</span><span class="festival">(Festival)</span><span class="venue-name">(Address 1)</span><span class="venue-address-1">(Address 2)</span>
+        </div>
+      </section>
+    </section>
+    <footer class="footer-primary">
+      <div class="footer__awards"><img src="img/awards.jpg"/></div>
+      <div class="footer__social"><a href="https://www.facebook.com/JojoAndAvila" target="_blank" class="social-link"><img src="img/facebook3.png"/></a><a href="https://twitter.com/intent/tweet?source=webclient&amp;text=Watch+the+Trailer+for+%22The+Incredible+Adventure+of+Jojo%22%21+http%3A%2F%2Ftinyurl.com%2F43cl5gz" target="_blank" class="social-link"><img src="img/twitter3.png"/></a></div>
+    </footer>
   </body>
 </html>
