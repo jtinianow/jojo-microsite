@@ -280,7 +280,7 @@ h6 {
 }
 .content {
   max-width: 65rem;
-  margin: 0 1.125em;
+  margin: 0 24px;
 }
 @media (min-width: 768px) {
   .content {
