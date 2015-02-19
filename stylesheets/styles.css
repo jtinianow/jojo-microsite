@@ -1,0 +1,373 @@
+/**
+ *  BDW FRONT END DEV TOOLS CLASS APP
+ * 
+ *  This is the master file for all Stylus files in the
+ *  app. The file is dependent upon the cascade described
+ *  in the contents section below.
+ *  
+ *  Much of the CSS in this project is based on http://cssguidelin.es.
+ *  Familiarity with that styleguide can greatly improve a developer's
+ *  workflow with this codebase.
+  
+ 
+ 
+ *  CONTENTS
+ *  ========
+  
+ *  PLUGINS
+ *  Jeet................A responsive grid framework to improve layout.
+ *  Reset.styl..........A plugin for reseting/normalizing CSS across browsers.
+  
+ *  FONTS...............Font-face setup for all fonts.
+  
+ *  GLOBAL
+ *  Variables...........A collection of commonly used values.
+ *  Mixins..............Mixins/functions for calculating properties and values.
+ *  Extends.............Placeholder selectors for extending to reduce duplicate CSS.
+  
+ *  BASE
+ *  Elements............Global, element-specific styling.
+ *  Icons...............Setup for all icons in iconfont.
+ *  Animations..........Animations used throughout the app.
+  
+ *  COMPONENTS..........A collection of BEM blocks for styling specific modules.
+ 
+ 
+ 
+ *  REFERENCES
+ *  ==========
+  
+ *  CSS Guidelines (styleguide)
+ *  http://cssguidelin.es
+ 
+ *  Stylus
+ *  http://learnboost.github.io/stylus/
+  
+ *  Jeet
+ *  http://jeet.gs
+  
+ *  reset.styl
+ *  https://npmjs.com/package/reset.styl
+ 
+ */
+/*------------------------------------*
+	PLUGINS
+\*------------------------------------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+q:before,
+blockquote:after,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*------------------------------------*
+	FONTS
+\*------------------------------------*/
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*------------------------------------*
+    GLOBAL
+\*------------------------------------*/
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*------------------------------------*
+    BASE
+\*------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #333;
+  background: #fefefe;
+}
+a,
+button,
+input {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+}
+ul,
+ol {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+strong {
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+.icon-dual {
+  position: relative;
+}
+.icon-add:before {
+  content: '\E016';
+}
+/*------------------------------------*
+    COMPONENTS
+\*------------------------------------*/
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+}
+.content,
+.trailer__wrapper,
+.about__wrapper,
+.screenings__wrapper {
+  padding-top: 3.75em;
+}
+.content {
+  max-width: 65rem;
+  margin: 0 1.125em;
+}
+@media (min-width: 768px) {
+  .content {
+    margin: 0 auto;
+  }
+}
+.screenings__next {
+  padding-bottom: 1.5em;
+}
+span {
+  display: block;
+  margin-bottom: 0.3em;
+}
+h1,
+h2 {
+  padding-bottom: 0.75em;
+  font-family: 'Coming Soon', Arial, sans-serif;
+  font-size: 1.5em;
+}
+p {
+  line-height: 150%;
+}
+.date,
+.venue-name {
+  font-weight: bold;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.screening-info__link,
+.about__link {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  background: #ffa800;
+  border-radius: 5px;
+  color: #fff;
+}
+.footer-primary {
+  max-width: 65rem;
+  margin: 0 1.5em;
+  padding-top: 9em;
+}
+.footer__awards img {
+  max-width: 100%;
+  height: auto;
+}
+.footer__social,
+.footer__awards {
+  display: block;
+  text-align: center;
+}
+.social-link {
+  display: inline-block;
+  padding: 1.5em;
+}
+.header-primary__wrapper {
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  z-index:999;
+  min-height: 40px;
+  background: #0e3c46;
+}
+.header-primary {
+  text-align: center;
+  margin: 0 auto;
+}
+.nav-primary__wrapper {
+  display: inline-block;
+  margin: 0 auto;
+}
+.nav-primary {
+  line-height: 3em;
+}
+.nav-primary__link {
+  padding: 1.5em;
+  vertical-align: baseline;
+  color: #fff;
+}
