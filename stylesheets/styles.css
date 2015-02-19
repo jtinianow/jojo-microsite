@@ -279,7 +279,7 @@ h6 {
   padding-top: 3.75em;
 }
 .content {
-  max-width: 65rem;
+  max-width: 95%;
   margin: 0 24px;
 }
 @media (min-width: 768px) {
