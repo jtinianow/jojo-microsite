@@ -298,6 +298,9 @@ p {
   font-size: 36px;
   line-height: 150%;
 }
+a{
+  font-size: 36px;
+}
 .date,
 .venue-name {
   font-weight: bold;
