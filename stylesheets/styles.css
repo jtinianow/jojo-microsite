@@ -367,3 +367,13 @@ p {
   vertical-align: baseline;
   color: #fff;
 }
+
+@media (min-width: 768px){
+  body{
+    font-size: 16px;
+  }
+  .content{
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
