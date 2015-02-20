@@ -210,7 +210,6 @@ html {
   font-family: 'Open Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 36px;
 }
 body {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -293,9 +292,10 @@ h1,
 h2 {
   padding-bottom: 0.75em;
   font-family: 'Coming Soon', Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 54px;
 }
 p {
+  font-size: 36px;
   line-height: 150%;
 }
 .date,
@@ -369,11 +369,14 @@ p {
 }
 
 @media (min-width: 768px){
-  html{
-    font-size: 16px;
-  }
   .content{
     max-width: 50rem;
     margin: 0 auto;
+  }
+  h1, h2{
+    font-size: 36px;
+  }
+  p, span, a{
+    font-size: 21px;
   }
 }
