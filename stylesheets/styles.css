@@ -210,10 +210,10 @@ html {
   font-family: 'Open Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 36px;
 }
 body {
   font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 36px;
   color: #333;
   background: #fefefe;
 }
@@ -369,7 +369,7 @@ p {
 }
 
 @media (min-width: 768px){
-  body{
+  html{
     font-size: 16px;
   }
   .content{
